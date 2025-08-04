@@ -32,7 +32,7 @@ function generateHTML(fileList) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mini Drive</title>
+  <title>js-cloud-server</title>
   <style>
     body { font-family: sans-serif; margin: 20px; }
     form { margin-bottom: 20px; }
@@ -42,7 +42,7 @@ function generateHTML(fileList) {
   </style>
 </head>
 <body>
-  <h2>## My Mini Drive</h2>
+  <h2>js-cloud-server</h2>
   <form id="uploadForm" enctype="multipart/form-data" method="POST">
     <input type="file" name="file" required>
     <button type="submit">Upload</button>
@@ -105,5 +105,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`#  Mini Drive running at http://localhost:${PORT}/`);
+  console.log(` Mini Drive js-cloud-server running at http://localhost:${PORT}/`);
 });
